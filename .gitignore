@@ -109,3 +109,4 @@ venv.bak/
 # project files
 entries.json
 read.json
+settings.json
