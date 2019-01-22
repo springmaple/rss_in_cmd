@@ -17,6 +17,8 @@ def to_unix_ts(time_structure):
 
 
 def to_pretty_date(timestamp):
+    if not timestamp:
+        return datetime(year=1970, month=1, day=1)
     return datetime.fromtimestamp(timestamp)
 
 
