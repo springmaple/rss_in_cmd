@@ -41,3 +41,11 @@ def get_read():
 def save_read(read):
     with open(READ_CACHE, mode='w') as f:
         json.dump(read, f, indent=2)
+
+
+def print_all_feeds(feeds):
+    print(f'You have {len(feeds)} feed items')
+    if len(feeds) > 0:
+        print()
+        for feed_code in feeds.keys():
+            print(f'  {feed_code}')
